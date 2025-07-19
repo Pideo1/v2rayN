@@ -8,7 +8,7 @@ public class Global
     public const string GithubUrl = "https://github.com";
     public const string GithubApiUrl = "https://api.github.com/repos";
     public const string GeoUrl = "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/{0}.dat";
-    public const string SingboxRulesetUrl = @"https://raw.githubusercontent.com/2dust/sing-box-rules/rule-set-{0}/{1}.srs";
+    public const string SingboxRulesetUrl = @"https://gcore.jsdelivr.net/gh/2dust/sing-box-rules@rule-set-{0}/{1}.srs";
 
     public const string PromotionUrl = @"aHR0cHM6Ly85LjIzNDQ1Ni54eXovYWJjLmh0bWw=";
     public const string ConfigFileName = "guiNConfig.json";
@@ -92,7 +92,7 @@ public class Global
     ];
 
     public static readonly List<string> SubConvertConfig =
-        [@"https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"];
+        [@"https://gcore.jsdelivr.net/gh/Pideo1/ACL4SSR@master/Clash/config/ACL4SSR.ini"];
 
     public static readonly List<string> SubConvertTargets =
     [
@@ -115,6 +115,8 @@ public class Global
     [
         @"https://www.google.com/generate_204",
             @"https://www.gstatic.com/generate_204",
+            @"https://music.youtube.com/generate_204",
+            @"https://cp.cloudflare.com/generate_204",
             @"https://www.apple.com/library/test/success.html",
             @"http://www.msftconnecttest.com/connecttest.txt"
     ];
@@ -129,31 +131,31 @@ public class Global
     public static readonly List<string> SingboxRulesetSources =
     [
         "",
-            @"https://cdn.jsdelivr.net/gh/runetfreedom/russia-v2ray-rules-dat@release/sing-box/rule-set-{0}/{1}.srs",
-            @"https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/{1}.srs"
+            @"https://gcore.jsdelivr.net/gh/runetfreedom/russia-v2ray-rules-dat@release/sing-box/rule-set-{0}/{1}.srs",
+            @"https://gcore.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/{1}.srs"
     ];
 
     public static readonly List<string> RoutingRulesSources =
     [
         "",
-            @"https://cdn.jsdelivr.net/gh/runetfreedom/russia-v2ray-custom-routing-list@main/v2rayN/template.json",
-            @"https://cdn.jsdelivr.net/gh/Chocolate4U/Iran-v2ray-rules@main/v2rayN/template.json"
+            @"https://gcore.jsdelivr.net/gh/runetfreedom/russia-v2ray-custom-routing-list@main/v2rayN/template.json",
+            @"https://gcore.jsdelivr.net/gh/Chocolate4U/Iran-v2ray-rules@main/v2rayN/template.json"
     ];
 
     public static readonly List<string> DNSTemplateSources =
     [
         "",
-            @"https://cdn.jsdelivr.net/gh/runetfreedom/russia-v2ray-custom-routing-list@main/v2rayN/",
-            @"https://cdn.jsdelivr.net/gh/Chocolate4U/Iran-v2ray-rules@main/v2rayN/"
+            @"https://gcore.jsdelivr.net/gh/runetfreedom/russia-v2ray-custom-routing-list@main/v2rayN/",
+            @"https://gcore.jsdelivr.net/gh/Chocolate4U/Iran-v2ray-rules@main/v2rayN/"
     ];
 
     public static readonly Dictionary<string, string> UserAgentTexts = new()
         {
-            {"chrome","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" },
-            {"firefox","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0" },
-            {"safari","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15" },
-            {"edge","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.70" },
-            {"none",""}
+            {"chrome","Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.205 Safari/537.36" },
+            {"firefox","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0 OpenWave/93.4.3744.31" },
+            {"safari","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.4.1 Safari/605.1.15" },
+            {"edge","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.3240.92" },
+            {"none","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.3240.92 Gecko/20100101 Firefox/139.0 OpenWave/93.4.3744.31"}
         };
 
     public const string Hysteria2ProtocolShare = "hy2://";
