@@ -155,8 +155,8 @@ public class ConfigHandler
         config.Fragment4RayItem ??= new()
         {
             Packets = "tlshello",
-            Length = "100-200",
-            Interval = "10-20"
+            Length = "50-266",
+            Interval = "5-10"
         };
         config.GlobalHotkeys ??= new();
 
